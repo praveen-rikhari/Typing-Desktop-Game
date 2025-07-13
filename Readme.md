@@ -6,12 +6,12 @@ Typing Speed Challenger is a beautiful, minimal, and fully working cross-platfor
 
 ## 🚀 Features
 
-* 🧠 Random typing paragraph generation
-* ⌨️ Realtime typing speed tracking (WPM and time)
-* 🚫 Paste detection to prevent cheating
-* 🎯 Accurate sentence match logic
-* 🌈 Beautiful custom CSS (no frameworks used)
-* 🖥️ Packaged for Linux using AppImage (runs without installation)
+- 🧠 Random typing paragraph generation
+- ⌨️ Realtime typing speed tracking (WPM and time)
+- 🚫 Paste detection to prevent cheating
+- 🎯 Accurate sentence match logic
+- 🌈 Beautiful custom CSS (no frameworks used)
+- 🖥️ Packaged for Linux using AppImage (runs without installation)
 
 ---
 
@@ -70,9 +70,9 @@ npm run start
 
 This will:
 
-* Start the React dev server
-* Wait for it to be ready
-* Launch Electron window loading the React app
+- Start the React dev server
+- Wait for it to be ready
+- Launch Electron window loading the React app
 
 ---
 
@@ -138,11 +138,11 @@ That’s it! No install needed, no terminal experience required after making it 
 
 ## 🛠 Future Improvements (Ideas)
 
-* Add accuracy and mistake count
-* Add high score history
-* Include dark/light mode toggle
-* Use real APIs for dynamic paragraphs
-* Add `.deb` installer for easier Ubuntu install
+- Add accuracy and mistake count
+- Add high score history
+- Include dark/light mode toggle
+- Use real APIs for dynamic paragraphs
+- Add `.deb` installer for easier Ubuntu install
 
 ---
 

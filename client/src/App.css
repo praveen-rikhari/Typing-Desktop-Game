@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.app {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.sentence {
+  font-size: 18px;
+  background: #f0f2f6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  user-select: none;
+}
+
+.input-area {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-area:focus {
+  border-color: #6c63ff;
+}
+
+.results {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.stat {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.restart-btn {
+  background: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.restart-btn:hover {
+  background: #574fde;
+}

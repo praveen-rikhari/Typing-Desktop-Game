@@ -1,0 +1,58 @@
+{
+  "name": "electron-typing-challenger-app",
+  "version": "1.0.0",
+  "description": "Typing Speed Challenger - React + Electron Desktop App",
+  "main": "electron/main.js",
+  "scripts": {
+    "postinstall": "cd client && npm install",
+    "client": "cd client && npm run dev",
+    "electron": "wait-on http://localhost:5173 && electron .",
+    "start": "concurrently \"npm run client\" \"npm run electron\"",
+    "build": "cd client && npm run build",
+    "dist": "npm run build && electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praveen-rikhari/Typing-Desktop-Game.git"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "typing",
+    "desktop",
+    "game"
+  ],
+  "author": "Praveen Rikhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveen-rikhari/Typing-Desktop-Game/issues"
+  },
+  "homepage": "https://github.com/praveen-rikhari/Typing-Desktop-Game#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "electron": "^37.2.1",
+    "electron-builder": "^26.0.12",
+    "wait-on": "^8.0.3"
+  },
+  "build": {
+    "appId": "com.praveen.typingchallenger",
+    "productName": "Typing Speed Challenger",
+    "files": [
+      "electron/**/*",
+      "client/dist/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

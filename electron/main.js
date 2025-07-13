@@ -10,8 +10,11 @@ function createWindow() {
     },
   });
 
-  // Load React app (development server)
-  win.loadURL("http://localhost:5173");
+  // 👉 LOAD REACT BUILD (for production)
+  win.loadFile(path.join(__dirname, "../client/dist/index.html"));
+
+  // 👉 For development mode:
+  // win.loadURL("http://localhost:5173");
 }
 
 // Electron app events
